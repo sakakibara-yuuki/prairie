@@ -16,7 +16,7 @@
 
     <!-- center -->
     <div class="bg-blue-500 col-span-6 row-span-1 z-50">
-        <div class="bg-blue-600 sticky top-0 h-24 opacity-70 grid grid-cols-2 grid-flow-row">
+        <div class="bg-blue-600/70 sticky top-0 h-24 grid grid-cols-2 grid-flow-row">
           <div class="col-span-2 text-3xl">Home</div>
           <div class="text-center">For you</div>
           <div class="text-center">Following</div>

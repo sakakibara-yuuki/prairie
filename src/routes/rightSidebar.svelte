@@ -35,7 +35,7 @@
   
 
 <!-- cards 1 -->
-<div class="w-full max-w-sm px-4 py-3 bg-white rounded-md shadow-md dark:bg-gray-800">
+<div class="w-full px-4 py-3 bg-white rounded-md shadow-md dark:bg-gray-800">
     <h1 class="mt-2 text-lg font-semibold text-gray-800 dark:text-white">Get Verified</h1>
     <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Subscribe to unlock new features.</p>
     <button class="bg-blue-500 rounded-md text-white">Get Verified</button>
@@ -45,7 +45,7 @@
 <div class="flex flex-col mt-6">
     <div class="inline-block min-w-full align-middle">
         <div class="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
-            <table class=" divide-gray-200 dark:divide-gray-700">
+            <table class="w-full divide-gray-200 dark:divide-gray-700">
                 <thead class="bg-gray-50 dark:bg-gray-800">
                     <tr>
                         <th scope="col" class="py-3.5 px-4' text-lg text-left rtl:text-right text-gray-500 dark:text-gray-400">
