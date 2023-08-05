@@ -1,41 +1,34 @@
 <script>
   import "../app.css";
+  import LeftSidebar from "./leftSidebar.svelte";
+  import RightSidebar from "./rightSidebar.svelte";
 </script>
 
+<main>
+  <div class="grid grid-cols-1 sm:grid-cols-10">
 
-<header class="bg-yellow-500 fixed top-0 z-10 w-full">
-  <p>hello</p>
-</header>
+    <!-- left side bar -->
+    <div class="bg-blue-500 hidden sm:inline-block">
+      <slot name="sidebar_left">
+        <LeftSidebar/>
+      </slot>
+    </div>
 
-<main class="mt-20">
+    <!-- center -->
+    <div class="bg-blue-500 col-span-6 row-span-1 z-50">
+        <div class="bg-blue-600 sticky top-0 h-24 opacity-70 grid grid-cols-2 grid-flow-row">
+          <div class="col-span-2 text-3xl">Home</div>
+          <div class="text-center">For you</div>
+          <div class="text-center">Following</div>
+        </div>
+        <slot />
+    </div>
 
-<div class="grid grid-cols-1 sm:grid-cols-3">
-
-  <!-- right side bar -->
-  <div class="bg-blue-500 hidden sm:inline-block">
-    <slot name="sidebar_left">
-      <div class="sticky top-10 z-40">
-        <h1>side bar left</h1>
-        <h1>side bar left</h1>
-        <h1>side bar left</h1>
-      </div>
-    </slot>
+    <!-- left side bar -->
+    <div class="bg-blue-500 hidden sm:block col-span-3">
+      <slot name="sidebar_right">
+        <RightSidebar />
+      </slot>
+    </div>
   </div>
-
-  <!-- center -->
-  <div class="bg-red-500">
-    <slot />
-  </div>
-
-  <!-- left side bar -->
-  <div class="bg-green-400 hidden sm:block">
-    <slot name="sidebar_right">
-      <div class="sticky top-10 z-40">
-        <h1>side bar right</h1>
-        <h1>side bar right</h1>
-        <h1>side bar right</h1>
-      </div>
-    </slot>
-  </div>
-</div>
 </main>
